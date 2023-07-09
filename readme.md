@@ -6,8 +6,10 @@
         <li>Portfolio</li>
         <li>Calculator</li>
         <li>
-            <h1>Extra</h1>
-            <li>Tribute Page</li>
+            <ol>
+                <h1>Extra :</h1>
+                <li>Tribute Page</li>
+            </ol>
         </li>
     </ol>
 </details>
