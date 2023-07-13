@@ -9,3 +9,8 @@
 
   > 4. Tribute Page -      Task 1
 
+## Installation  
+
+  1. Open Terminal  
+  2. git clone https://github.com/faizan619/CODSOFT.git  
+  3. Run Index.html file from every folder
