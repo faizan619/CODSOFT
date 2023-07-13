@@ -1,22 +1,10 @@
-<h1>CodSoft Internship of Web Development</h1>
-<details>
-    <summary><h1>All List of Task Done</h1></summary>
-    <ol class="mainol">
-        <li>Landing Page</li>
-        <li>Portfolio</li>
-        <li>Calculator</li>
-        <li>
-            <ol>
-                <h1>Extra :</h1>
-                <li>Tribute Page</li>
-            </ol>
-        </li>
-    </ol>
-</details>
+# CodSoft Internship of Web Development.
 
-<style>
-    .mainol{
-        display:flex;
-        flex-direction:column;
-    }
-</style>
+<details>
+    <summary>List of Task</summary>
+    - [ ] Landing Page - Task 1
+    - [ ] Portfolio - Task 2
+    - [ ] Calculator  
+    ***  
+    - [ ] Tribute Page
+</details>
