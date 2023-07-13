@@ -2,9 +2,9 @@
 
 <details>
     <summary>List of Task</summary>
-    - [ ] Landing Page - Task 1
-    - [ ] Portfolio - Task 2
-    - [ ] Calculator  
-    ***  
-    - [ ] Tribute Page
+1. Landing Page - Task 1  
+2. Portfolio - Task 2  
+3. Calculator  
+***  
+4. Tribute Page  
 </details>
