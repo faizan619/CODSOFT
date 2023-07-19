@@ -4,7 +4,7 @@
 var result = document.getElementById('result');
 var smallResult = document.getElementById('smallResult');
 var cal = false;
-var val_1 = false;
+var val_1 = false; 
 var val_2 = false;
 var oper = '+';
 var operPressed = false;
@@ -14,53 +14,37 @@ var currentStatus = 0;
 var o;
 
 function num(val) {
-	val = val.toString(); // converting to string so it won't be added together in display (2 + '2' should not do '22')
-
+	val = val.toString(); 
 	if (cal_done)
-		// if calculation is done
-		cls(); // clear everything
-
+		cls(); 
 	if (!operPressed) {
-		// if no operator is pressed (means it's first value)
 		if (!val_1) val_1 = 0;
-
 		val_1 = val_1 + val;
-
-		val_1 = lengthFix(val_1); // limiting to 12
-
+		val_1 = lengthFix(val_1);
 		result.innerHTML = val_1;
 		smallResult.innerHTML = val_1;
-		// console.log('num to be calc: ' + val_1);
 	}
 	if (operPressed) {
-		// if operator is pressed (means it's 2nd value)
 		if (!val_2) val_2 = 0;
-
 		val_2 = val_2 + val;
-
-		val_2 = lengthFix(val_2); // limiting to 12
-
+		val_2 = lengthFix(val_2); 
 		result.innerHTML = val_2;
 		smallResult.innerHTML = val_1 + oper + val_2;
-		// console.log('2nd num to be calc: ' + val_2);
 	}
 }
 
-// when /,*,+,- is clicked
 function calc(val) {
 	if (val_1 && val_2) {
 		operPressed = true;
 		total();
 		oper = val;
 	}
-
 	if (cal_done) {
 		var x = (val_1 = tot);
 		cls();
 		val_1 = x;
-		val_1 = lengthFix(val_1); // limiting to 12
-		result.innerHTML = val; // display which operator is selected
-		// var a = smallResult.innerHTML.toString();
+		val_1 = lengthFix(val_1); 
+		result.innerHTML = val;
 		smallResult.innerHTML = +x + val;
 		oper = val;
 		operPressed = true;
@@ -69,7 +53,6 @@ function calc(val) {
 	if (!val_1 || operPressed) {
 		return false;
 	}
-
 	if (val_1 && !val_2) {
 		result.innerHTML = val; // display which operator is selected
 		var a = smallResult.innerHTML.toString();
@@ -78,7 +61,6 @@ function calc(val) {
 		operPressed = true;
 	}
 }
-
 function total() {
 	if (!val_1) return false;
 
